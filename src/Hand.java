@@ -30,7 +30,7 @@ public class Hand {
 	}
 	
 	public int getCardCount() {
-		return 1;
+		return hand.size();
 	}
 	
 //	public Card getCard() {
