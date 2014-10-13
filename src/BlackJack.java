@@ -10,6 +10,8 @@ public class BlackJack {
                              //   asked whether he wants to play 
                              //   another game.
     
-    
+    public static void makeGame() {
+    	
+    }
 
 }

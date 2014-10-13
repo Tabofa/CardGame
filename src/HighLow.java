@@ -3,7 +3,7 @@ import java.io.*;
 public class HighLow {
 
 
-   public static void main(String[] args) {
+   public static void makeGame() {
    
       System.out.println("This program lets you play the simple card game,");
       System.out.println("HighLow.  A card is dealt from a deck of cards.");
