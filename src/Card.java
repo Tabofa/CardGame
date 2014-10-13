@@ -23,8 +23,8 @@ public class Card {
 	public Card(int theValue, int theSuit) {
 		if(theSuit != SPADES && theSuit != HEARTS && theSuit != DIAMONDS && theSuit != CLUBS && theSuit != JOKER)
 			throw new IllegalArgumentException("Your suit is invalid.");
-		if(theSuit != JOKER && (theSuit < 1 || theSuit > 13))
-			throw new IllegalArgumentException("Your value is invalid.");
+		if(theSuit != JOKER && (theValue < 1 || theValue > 13))
+			throw new IllegalArgumentException("Your value is invalid: " + theSuit);
 		value = theValue;
 		suit = theSuit;
 	}
