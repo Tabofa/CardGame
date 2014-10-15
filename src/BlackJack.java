@@ -12,6 +12,43 @@ public class BlackJack {
     
     public static void makeGame() {
     	System.out.println("This is the Blackjack game, still under construction.");
+    	
+    	BlackJackDeck deck = new BlackJackDeck();
+    	deck.shuffle();
+    	BlackJackHand player = new BlackJackHand();
+    	BlackJackHand dealer = new BlackJackHand();
+    	
+    	int playerScore = 0;
+    	int dealerScore = 0;
+    	
+    		player.addCard(deck.dealCard()); 
+        	dealer.addCard(deck.dealCard()); 
+        	player.addCard(deck.dealCard()); 
+        	dealer.addCard(deck.dealCard()); 
+        	
+        	for (int i = player.getCardCount(); i > 0; i--) {
+    			System.out.println(player.getCard(i-1));
+    			playerScore += player.getCard(i-1).getValue();
+        	}
+        	
+        	if(playerScore == 21) {
+        		System.out.println("OMG, OMG, OMG! JIMMIE! Black jacked!");
+        	}
+        	System.out.println("Score: " + playerScore);
+        	
+//        	for (int i = player.getCardCount(); i > 0; i--) {
+//    			System.out.println(dealer.getCard(i-1));
+//    			dealerScore =+ dealer.getCard(i-1).getValue();
+//        	}
+    		
+
+
+
+    	
+    	
+    	
+//    	System.out.println("You have " + player.getCardCount() + " cards.");
+    	
     }
 
 }

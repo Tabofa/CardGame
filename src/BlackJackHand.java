@@ -1,24 +1,25 @@
 import java.util.ArrayList;
 
-public class Hand {
+//BlackJackCard
+public class BlackJackHand {
 	
-	private ArrayList<Card> hand;
+	private ArrayList<BlackJackCard> hand;
 	
-	public Hand() {
-		hand = new ArrayList<Card>();
+	public BlackJackHand() {
+		hand = new ArrayList<BlackJackCard>();
 	}
 	
 	public void clear() {
 		hand.clear();
 	}
 	
-	public void addCard(Card cardName) {
+	public void addCard(BlackJackCard cardName) {
 		if(cardName == null)
 			throw new NullPointerException("Can't add null card to hand.");
 		hand.add(cardName);
 	}
 	
-	public void removeCard(Card cardName) {
+	public void removeCard(BlackJackCard cardName) {
 		hand.remove(cardName);
 	}
 	
@@ -32,7 +33,7 @@ public class Hand {
 		return hand.size();
 	}
 	
-	public Card getCard(int position) {
+	public BlackJackCard getCard(int position) {
 		if(position < 0 || position >= hand.size())
 			throw new IllegalArgumentException("Position does not exist in hand: " 	
 					+ position);
@@ -40,12 +41,12 @@ public class Hand {
 	}
 	
 	public void sortBySuit() {
-		ArrayList<Card> newHand = new ArrayList<Card>();
+		ArrayList<BlackJackCard> newHand = new ArrayList<BlackJackCard>();
 		while(hand.size() > 0) {
 			int pos = 0;
-			Card c = hand.get(0);
+			BlackJackCard c = hand.get(0);
 			for (int i = 1; i < hand.size(); i++) {
-				Card c1 = hand.get(i);
+				BlackJackCard c1 = hand.get(i);
 				if(c1.getSuit() < c.getSuit() || (
 						c1.getSuit() == c.getSuit() && c1.getSuit() < c.getSuit())) {
 					pos = i;
@@ -59,12 +60,12 @@ public class Hand {
 	}
 	
 	public void sortByValue() {
-		ArrayList<Card> newHand = new ArrayList<Card>();
+		ArrayList<BlackJackCard> newHand = new ArrayList<BlackJackCard>();
 		while( hand.size() > 0 ) {
 			int pos = 0;
-			Card c = hand.get(0);
+			BlackJackCard c = hand.get(0);
 			for (int i = 1; i < hand.size(); i++) {
-				Card c1 = hand.get(i);
+				BlackJackCard c1 = hand.get(i);
 				if ( c1.getValue() < c.getValue() ||
 						(c1.getValue() == c.getValue() && c1.getSuit() < c.getSuit())) {
 					pos = i;
