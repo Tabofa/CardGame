@@ -11,7 +11,7 @@ public class BlackJack {
                              //   another game.
     
     public static void makeGame() {
-    	
+    	System.out.println("This is the Blackjack game, still under construction.");
     }
 
 }
