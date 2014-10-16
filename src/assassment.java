@@ -180,20 +180,20 @@ public class assassment {
 	}
 	
 	// two cards with the same value + two other cards with the same value
-	
-	// Behöver ses över
 	public static boolean twoPairs(Hand hand) {
 		hand.sortByValue();
 		if(
 				(hand.getCard(0).getValue() == hand.getCard(1).getValue()) &&
-				((hand.getCard(2).getValue() == hand.getCard(3).getValue()) ||
-				(hand.getCard(3).getValue() == hand.getCard(4).getValue())
+				((hand.getCard(2).getValue() == hand.getCard(3).getValue()) 
 			) || (	
-				(hand.getCard(3).getValue() == hand.getCard(4).getValue()) &&
-				((hand.getCard(2).getValue() == hand.getCard(3).getValue()) ||
-				(hand.getCard(1).getValue() == hand.getCard(0).getValue())	
-				))
-			) {
+				(hand.getCard(0).getValue() == hand.getCard(1).getValue()) &&
+				((hand.getCard(3).getValue() == hand.getCard(4).getValue()) 
+				)
+			) || (
+				(hand.getCard(4).getValue() == hand.getCard(2).getValue()) &&
+				((hand.getCard(3).getValue() == hand.getCard(4).getValue()) 	
+				)
+			)) {
 			return true;
 		} else {
 			return false;
