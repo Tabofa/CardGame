@@ -10,20 +10,17 @@ public class Chicago {
 	}
 	
 	public static void play() {
-		System.out.flush();
 		deck.shuffle();
 		dealHand();
 		player.sortBySuit();
 		showHand();
 		
 		while(changes < 3) {
-			System.out.flush();
-			System.out.println("You may replace your cards " + (3 - changes) + " more times.");
+			System.out.println("You may replace your cards " + (3 - changes) + " more time(s).");
 			dropCards();
 			dealHand();
 			showHand();
 		}
-
 		assassment.assassment(player);
 	}
 	

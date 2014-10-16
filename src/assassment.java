@@ -7,10 +7,10 @@ public class assassment {
 				System.out.println("Royal Straight Flush!!");
 				break;
 			}
-			if(royalStraight(hand)) {
-				System.out.println("Royal Straight!");
-				break;
-			}
+//			if(royalStraight(hand)) {
+//				System.out.println("Royal Straight!");
+//				break;
+//			}
 			if(straightFlush(hand)) {
 				System.out.println("Stright Flush!");
 				break;
