@@ -51,9 +51,9 @@ public class HighLow {
                                //   store a reference to it in 
                                //   the variable, deck.
       
-      BlackJackCard currentCard;  // The current card, which the user sees.
+      Card currentCard;  // The current card, which the user sees.
 
-      BlackJackCard nextCard;   // The next card in the deck.  The user tries
+      Card nextCard;   // The next card in the deck.  The user tries
                        //    to predict whether this is higher or lower
                        //    than the current card.
 

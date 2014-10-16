@@ -7,10 +7,10 @@ public class Card {
 	public final static int CLUBS = 3;
 	public final static int JOKER = 4;
 	
-	public final static int ACE = 1;
-	public final static int JACK = 11;
-	public final static int QUEEN = 12;
-	public final static int KING = 13;
+	public final static int ACE = 11;
+	public final static int JACK = 10;
+	public final static int QUEEN = 10;
+	public final static int KING = 10;
 	
 	private final int suit;
 	private final int value;

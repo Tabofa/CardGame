@@ -13,10 +13,10 @@ public class BlackJack {
     public static void makeGame() {
     	System.out.println("This is the Blackjack game, still under construction.");
     	
-    	BlackJackDeck deck = new BlackJackDeck();
+    	Deck deck = new Deck();
     	deck.shuffle();
-    	BlackJackHand player = new BlackJackHand();
-    	BlackJackHand dealer = new BlackJackHand();
+    	Hand player = new Hand();
+    	Hand dealer = new Hand();
     	
     	int playerScore = 0;
     	int dealerScore = 0;
