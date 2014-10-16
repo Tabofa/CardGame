@@ -2,7 +2,7 @@
 public class bootUp {
 
 	public static void main(String[] args) {
-		BlackJack.makeGame();
+		Chicago.makeGame();
 //		System.out.println("Välj det spel du vill spela");
 //		System.out.println("Ange nummer på spelet och tryck på [Enter].");
 //		System.out.println("1. HighLow");
