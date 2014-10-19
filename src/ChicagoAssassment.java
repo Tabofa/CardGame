@@ -1,10 +1,11 @@
 
-public class assassment {
+public class ChicagoAssassment {
 	
 	public static void assassment(Hand hand) {
 		while (true) {
 			if(royalFlush(hand)) {
 				System.out.println("Royal Straight Flush!!");
+				System.out.println("");
 				break;
 			}
 //			if(royalStraight(hand)) {
@@ -13,37 +14,46 @@ public class assassment {
 //			}
 			if(straightFlush(hand)) {
 				System.out.println("Stright Flush!");
+				System.out.println("");
 				break;
 			}
 			if(fourOfaKind(hand)) {
 				System.out.println("Wow! Four of a kind!");
+				System.out.println("");
 				break;
 			}
 			if(fullHouse(hand)) {
 				System.out.println("Full house!");
+				System.out.println("");
 				break;
 			}
 			if(flush(hand)) {
 				System.out.println("Flush!");
+				System.out.println("");
 				break;
 			}
 			if(straight(hand)) {
 				System.out.println("Straight!");
+				System.out.println("");
 				break;
 			}
 			if(threeOfaKind(hand)) {
 				System.out.println("Three of a kind!");
+				System.out.println("");
 				break;
 			}
 			if(twoPairs(hand)) {
 				System.out.println("Two Pairs!");
+				System.out.println("");
 				break;
 			}
 			if(onePair(hand)) {
 				System.out.println("One pair!");
+				System.out.println("");
 				break;
 			}
 			System.out.println("Too bad, better luck next time!");
+			System.out.println("");
 		}
 		
 	}

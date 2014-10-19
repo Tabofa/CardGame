@@ -26,7 +26,7 @@ public class BlackJack {
         	player.addCard(deck.dealCard()); 
         	dealer.addCard(deck.dealCard()); 
         	
-        	for (int i = player.getCardCount(); i > 0; i--) {
+        	for (int i = 0; i > player.getCardCount(); i++) {
     			System.out.println(player.getCard(i-1) + ". Value: " + player.getCard(i-1).getValue());
     			playerScore += player.getCard(i-1).getValue();
         	}
